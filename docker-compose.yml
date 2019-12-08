@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgres-server:
+    image: "postgres:10.4-alpine"
+    environment:
+      POSTGRES_DB: spacex
+      POSTGRES_USER: spacex
+      POSTGRES_PASSWORD: spacex
+    ports:
+      - "5432:5432"
