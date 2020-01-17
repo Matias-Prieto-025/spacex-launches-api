@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-const LaunchesController = require('../controllers/launches');
-const AuthMiddleware = require('../middlewares/auth');
+const LaunchesController = require('../src/controllers/launches');
+const AuthMiddleware = require('../src/middlewares/auth');
 
 const authMiddleware = new AuthMiddleware();
 const launchesController = new LaunchesController();
